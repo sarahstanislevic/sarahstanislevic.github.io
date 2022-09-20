@@ -3,17 +3,27 @@
 
 		<script>
 
-		var five= 5;
-		var numFive= 5;
-		var binary = false;
-
-
 
 		function question1() {
 			alert('Whats your favorite food');
-			
 			document.getElementById("assessment").innerHTML = "text here";
 		}
+
+		function response(){
+				button = document.getElementById("button2");
+				console.log();
+
+				/*
+				button1 = button.value;
+				console.log(buttonVal);
+
+				if (buttonVal == 1){
+					alert('this is button 1');
+				}
+				*/
+
+			}
+
 
 		//question1();
 
@@ -25,8 +35,8 @@
 	<body>
 
 	<div>
-			<button onclick="question1()">What's your favorite food?</button>
-			<button>click me</button>
+			<button onclick="response()" value=1 id="button1">What's your favorite food?</button><br>
+			<button onclick="response()" value=2>button 2</button>
 	</div>
 
 	<div id="assessment">
