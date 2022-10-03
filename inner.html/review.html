@@ -2,6 +2,9 @@
 
 <head>
 
+	<title>review2</title>
+
+
 	<style>
 		body {
 			background-color:  yellow;
@@ -15,10 +18,9 @@
 
 
 	function b1() {
-		button = document.getElementById('b1');
-		console.log(button);
+		var button = document.getElementById('b1');
 		alert(button.value);
-		if(button.value =='happy'){
+		if(button.value =='happy') {
 			document.body.style.backgroundColor = "red";
 			button.value='angry';
 		}

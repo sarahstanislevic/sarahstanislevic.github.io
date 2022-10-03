@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<title>Simple Function</title>
+
+		<script>
+
+			var colorsArray = ["#1118A8", "#FFE066", "#62FF00", "#4400B3", "#000000"] 
+
+			function changeMood() {				
+				num = Math.floor(Math.random() * 5);
+				document.body.style.backgroundColor = colorsArray[num];
+
+			}
+		</script>
+
+	</head>
+
+	<body>
+	
+	<button onclick="changeMood()">Change Mood</button>
+
+	</body>
+
+</html>

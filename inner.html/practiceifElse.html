@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<title>Simple Function2</title>
+
+		<script>
+
+			var colorsArray = ["#1118A8", "#FFE066", "#62FF00", "#4400B3", "#000000"] 
+
+		
+			function changeMood() {	
+				var button = document.getElementById("moodB");
+				bValue = button.value;
+
+			// not equal to 0
+			if(bValue != 0) {
+ 				// get random num of color array 1-4 
+				num = Math.floor(Math.random() * 5);
+				document.body.style.backgroundColor = colorsArray[num];
+				
+			}
+			else {
+				alert('value lol');
+				button.value = 1; 
+			}
+
+				
+
+			}
+		</script>
+
+	</head>
+
+	<body>
+	
+	<!-- button and value -->
+	<button onclick="changeMood()" value=0 id="moodB">Change Mood</button>
+
+	</body>
+
+</html>
