@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<title> 🍎 Fruit Object 🍎</title>
+
+<script>
+	var myList = ['apple','banana','orange'];
+	myList[1];
+
+	var myObject = {
+		name: "apple",
+		color: "red",
+		shape: "round",
+		flavor: "sweet",
+		notice: function(param){
+			alert(this.name);
+		}
+	}
+
+	myObject.notice();
+
+	//constructer
+	function fruitType(name,color,shape,flavor){
+		this.name = name;
+		this.color = color;
+		this.shape = shape;
+		this.flavor = flavor;
+		this.notice = function(){
+			alert(this.name + 'fruit is' + this.color);
+		}
+
+	}
+
+
+	var watermelon = new fruitType('watermelon', 'red and green', 'triangle', 'sweet');
+	console.log(watermelon);	
+
+
+
+</script>
+
+</head>
+
+<body>
+</body>
+
+
+</html>

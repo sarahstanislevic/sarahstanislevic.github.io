@@ -1,0 +1,64 @@
+<html>
+
+<head>
+
+<script>
+	var myList = ['apple','banana','orange'];
+	myList[1];
+
+	var myObject = {
+		name: "John",
+		color: "Brown",
+		length: "long",
+		type: "curly",
+		notice: function(param){
+			alert(this.name);
+		}
+	}
+
+	myObject.notice();
+
+	//constructer
+	function hairType(name,color,length,type){
+		this.name = name;
+		this.color = color;
+		this.length = length;
+		this.type = type;
+		this.notice = function(){
+			alert(this.name + 'hair is' + this.color);
+		}
+
+	}
+
+/*
+function newMovie(name,genre,runtime){
+	this.name=name;
+	this.genre=genre;
+	this.runtime=runtime;
+	this.movieGenre = function(){
+		alert(name + 'genre is' + genre);
+
+	}
+}
+
+function movieGenre(){param1, param2){
+	alert('Param1' + 'genre is' + 'param2')
+}
+*/
+
+
+
+	var julie = new hairType('julie', 'red', 'short', 'wavy');
+	console.log(julie);	
+
+
+
+</script>
+
+</head>
+
+<body>
+</body>
+
+
+</html>
