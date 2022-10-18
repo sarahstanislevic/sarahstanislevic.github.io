@@ -11,6 +11,18 @@ var ctx = c.getContext("2d");
 ctx.moveTo(0,0);
 ctx.lineTo(200,100);
 ctx.stroke();
+
+//constructer
+	function hairType(name,color,length,type){
+		this.name = name;
+		this.color = color;
+		this.length = length;
+		this.type = type;
+		this.notice = function(){
+			alert(this.name + 'hair is' + this.color);
+		}
+
+	}
 </script>
 
 </body>

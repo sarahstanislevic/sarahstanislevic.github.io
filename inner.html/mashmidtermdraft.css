@@ -1,0 +1,45 @@
+body {
+  background-color: lightblue;
+  font-family: verdana, Arial;
+  margin: 0 auto;
+  max-width: 960px;
+
+}
+
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size:18px;
+  text-align: center;
+
+}
+
+.boxes {
+  width: 100%;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.choice-boxes {
+  width: 33.333333%;
+  float: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.choice-boxes input {
+    font-size: 18px;
+    margin: 15px 4%;
+    padding: 16px 0;
+    width: 92%;
+    color: #BB475C;
+    border-radius: 6px;
+    border: 0;
+    outline: 0;
+    text-indent: 20px;
+}
