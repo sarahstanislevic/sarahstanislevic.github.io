@@ -43,3 +43,11 @@ p {
     outline: 0;
     text-indent: 20px;
 }
+
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: hotpink;
+  margin-top: 20px;
+}

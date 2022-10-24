@@ -1,0 +1,164 @@
+<html>
+
+	<head>
+		
+		<title>test</title>
+		<script>
+			
+		</script>
+
+	</head>
+
+
+	<body>
+		<h1>MASH</h1>
+		<p>Fill in the blanks and click the button below to see your future!</p>
+    <p id="demo"></p>
+
+<script>
+//const preferences = ["person", "place", "pet", "job", "pay", "number"];
+//document.getElementById("demo").innerHTML = preferences[0];
+
+Random myNumber = new Random();
+int x = myNumber.nextInt(6) + 1;
+System.out.printIn("you rolled a: " + x);
+
+  const pref = ["person", "place", "pet", "job", "pay", "number"];
+  pref.pop();
+  document.getElementById("demo").innerHTML = pref;
+
+//let text = "";
+//for (let i = 0; i < pref.length; i++) {
+  //text += pref[i] + "<br>";
+//}
+
+//document.getElementById("array").innerHTML = text;
+
+  function myFunction1() {
+        var x = document.getElementById("myDIV1");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function myFunction2() {
+        var x = document.getElementById("myDIV2");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+       function myFunction3() {
+        var x = document.getElementById("myDIV3");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+       function myFunction4() {
+        var x = document.getElementById("myDIV4");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+       function myFunction5() {
+        var x = document.getElementById("myDIV5");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function myFunction6() {
+        var x = document.getElementById("myDIV6");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+</script>
+
+ <button onclick="myFunction1()">Q1</button>
+
+    <div id="myDIV1">
+    Who will you marry?
+     <input name="person[]">
+          <input name="person[]">
+          <input name="person[]">
+          <input name="person[]">
+    </div>
+  
+      <button onclick="myFunction2()">Q2</button>
+
+    <div id="myDIV2">
+    Where will you live?
+     <input name="place[]">
+          <input name="place[]">
+          <input name="place[]">
+          <input name="place[]">
+    </div>
+
+    <button onclick="myFunction3()">Q3</button>
+
+    <div id="myDIV3">
+    What's your future pet?
+     <input name="pet[]">
+          <input name="pet[]">
+          <input name="pet[]">
+          <input name="pet[]">
+    </div>
+  
+<button onclick="myFunction4()">Q4</button>
+
+    <div id="myDIV4">
+    Your future profession?
+     <input name="job[]">
+          <input name="job[]">
+          <input name="job[]">
+          <input name="job[]">
+    </div>
+
+    <button onclick="myFunction5()">Q5</button>
+
+    <div id="myDIV5">
+    Your future salary?
+     <input name="pay[]">
+          <input name="pay[]">
+          <input name="pay[]">
+          <input name="pay[]">
+    </div>
+  
+
+   <button onclick="myFunction6()">Q6</button>
+
+    <div id="myDIV6">
+    Write a random number
+     <input name="number[]">
+          <input name="number[]">
+          <input name="number[]">
+          <input name="number[]">
+    </div>
+  
+    <div>
+       <input type="submit" value="Next">
+    </div>
+
+
+	</body>
+
+
+
+
+</html>
+

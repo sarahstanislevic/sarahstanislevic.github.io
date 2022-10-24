@@ -1,0 +1,67 @@
+body {
+  background-color: white;
+  font-family: verdana, Arial;
+  margin: 0 auto;
+  max-width: 960px;
+
+}
+
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size:18px;
+  text-align: center;
+
+}
+
+#myDIV1 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+#myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+#myDIV3 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+#myDIV4 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+} 
+
+#myDIV5 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+#myDIV6 {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
