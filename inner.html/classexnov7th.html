@@ -1,0 +1,85 @@
+<html>
+<head>
+
+
+	<title>
+	</title>
+
+	<style>
+		#bigBluediv{
+			background-color:  blue;
+			height:  500px;
+			width:  500px;
+		}
+
+			.yellowBox{
+			background-color:  yellow;
+			height:  200px;
+			width:  200px;
+
+		}
+
+	</style>	
+
+
+</head>
+
+<body>
+
+<h1>Click Me</h1>
+
+<div id ="bigBlueDiv">
+</div>
+
+<div id ="yellowBox">
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+<script>
+
+	
+
+	$('h1').click(function(){
+		alert('h1 was clicked on');
+	
+	}
+	);
+
+	$('bigBlueDiv').click(function(){
+		alert('big blue div was clicked on');
+
+	}
+	);
+
+	$('.yellowBox').hover(function(){
+		alert('yellow was hovered over');
+
+	}
+	);
+
+
+
+	/*
+	$(selector.nameJqueryFunctio(
+
+	function()
+	{
+		javascript statements here
+	});
+
+	*/
+
+</script>
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+ -->
+
+</body>
+
+
+</html>
