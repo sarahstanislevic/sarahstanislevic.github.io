@@ -1,0 +1,71 @@
+<html>
+
+<head>
+
+	<title></title>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+	<style>
+	</style>
+	
+
+</head>
+
+
+<body>
+
+<div class="happens">
+	<p id="innerH">When someone hovers, things will happen.</p>
+</div>
+
+<div id="dog">
+
+</div>	
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+
+
+
+<script>
+	$('.happens').hover(function(){
+   		$('#innerH').hide();	
+   		});
+
+
+	$().click(function(){
+
+	});
+
+
+	/*
+	[
+	{"name":"Barbra", "role":"Faculty","college": "Queens"}
+	{"name":"Sarah", "role":"Student","college": "Queens"}
+	]
+
+	*/
+	//get all breeds
+	$.get(" https://dog.ceo/api/breeds/list/all", function(data, status){
+		results = data['message'] ['bulldog'] ['0'];
+		console.log(results);
+	});
+
+	//get one image
+	$.get("https://dog.ceo/api/breeds/image/random", function(data, status){
+		console.log(data);
+		results = data['message'];
+		console.log(results);
+		dogImg = "<img src='" + results + "'>";
+		console.log(dogImg);
+		$('#dog').html(dogImg);
+	});
+
+</script>	
+
+</html>
