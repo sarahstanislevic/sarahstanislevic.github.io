@@ -1,0 +1,22 @@
+      @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap'); 
+
+      body{
+        background-color: red;
+
+      }
+h1{
+        color: black;
+        font-family: "Mountains of Christmas";
+        font-size: 48pt;
+
+      }
+
+
+
+/* Set the size of the div element that contains the map 
+#map {
+  height: 400px; /* The height is 400 pixels
+  width: 100%; /* The width is the width of the web page 
+}*/
+
+
