@@ -1,9 +1,10 @@
-var canvas
 var maxCol = 5;
 var maxRow = 5;
 
-function setup() {
-  createCanvas(600, 600);
+ function setup() {
+  var canvas = createCanvas(600, 600);
+  // Move the canvas so it’s inside our <div id="sketch-holder">.
+  canvas.parent('sketch-holder');
   colorMode(HSB, 360, 100, 100);
   background(0, 0, 100);
   noStroke();
