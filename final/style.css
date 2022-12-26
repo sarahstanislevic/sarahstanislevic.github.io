@@ -1,22 +1,58 @@
       @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap'); 
 
       body{
-        background-color: red;
+        background-color: darkred;
+        color: white;
 
       }
-h1{
-        color: black;
+
+      h1{
         font-family: "Mountains of Christmas";
         font-size: 48pt;
 
       }
 
+    /* advent calendar door */
+.door {
+    /* size of box */
+    width:75px;
+    height:75px;
+    
+    /* border style */
+    border-style:solid;
+    border-width:2px;
+    border-radius:5px;
+    border-color:#000;
+    margin:20px;
+    
+    /* text style */
+    text-align:center;
+    display:inline-block;
+    vertical-align:middle;
+    box-shadow: 10px 10px 5px #888;
+    font-size:300%;
+    color: #F00;
+    
+    /* background */
+    background-color: #FFF;
+    opacity: 0.5;
+}
+
+.door:hover {
+    background-color: #F00;
+    color: #FFF;
+}
+
+ /* Set the size of the div element that contains the map */
+#mapCanvas {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+  color: black;
+
+}
 
 
-/* Set the size of the div element that contains the map 
-#map {
-  height: 400px; /* The height is 400 pixels
-  width: 100%; /* The width is the width of the web page 
-}*/
+
+
 
 

@@ -1,51 +1,103 @@
-var canvas;
-var maxCol = 5;
-var maxRow = 5;
+// if i is less than 26, display square
+for(i=1; i<26; i++) {
 
-function setup() {
-  canvas = createCanvas(600, 600);
-  canvas.position(0,0);
-  colorMode(HSB, 360, 100, 100);
-  background(0, 0, 100);
-  noStroke();
-  var xSpacing = (width/maxCol);
-  var ySpacing = (height/maxRow);
-  translate(30, 25);
-  
-  // each column and row are summed
-  for (var x = 0; x < maxCol; x++) {
-  for (var y = 0; y < maxRow; y++) {
-    
-  push();
-  translate(x*xSpacing, y*ySpacing);
-    
-  //  determines if column or row is even or odd, fills with green color. if column and row are even, then display green square or if column and row are odd, then display green
-  if (x % 2 == 0 && y % 2 == 0 || x % 2 == 1 && y % 2 == 1) {
-        fill(139, 64, 56);
-        textAlign(CENTER);
-        text("1", 30, 30);
-      }
-    
-    // else fill with red color
-    else {
-        fill(360, 360, 100);
-      }
-        
-    if (x == 3 && y == 4) {
-        textAlign(CENTER);
-        text("Christmas Eve", 30, 30);
-      }
-    else if (x == 4 && y == 4) {
-        textAlign(CENTER);
-        text("Christmas Day", 30, 30);
-    }
-    else {
-      beginShape();
-      rect(x,y,60,60);
-      }
-      endShape();
-      pop();
-  }
-  }
+// append
+    $('.calendar').append('<div class="door">'+i + '</div>')
 }
-      
+    // add click handler
+    $('.door').click(onDoorClick);
+
+
+
+    // can do if else instead of switch 
+    function onDoorClick() {
+        var day = $(this).text();
+
+        switch(day) {
+            case '1':
+            alert('Helloooooooo', );
+
+            break;
+            case '2':
+            alert('He');
+            break;
+        }
+    }
+
+// Initialize and add the map
+function initMap() {
+    var map;
+    var bounds = new google.maps.LatLngBounds();
+    var mapOptions = {
+        mapTypeId: 'roadmap'
+    };
+                    
+    // Display a map on the web page
+    map = new google.maps.Map(document.getElementById("mapCanvas"), mapOptions);
+    map.setTilt(50);
+        
+    // Multiple markers location, latitude, and longitude
+    var markers = [
+        ['Brooklyn Museum, NY', 40.671349546127146, -73.96375730105808],
+        ['Central Library, Brooklyn, NY', 40.67254944015601, -73.9682162170653],
+        ['Prospect Park Zoo, NY', 40.66427511834109, -73.96512605857858],
+        ['Barclays Center, Brooklyn, NY', 40.68268267107631, -73.97546296241961]
+    ];
+                        
+    // Info window content
+    var infoWindowContent = [
+        ['<div class="info_content">' +
+        '<h2>Brooklyn Museum</h2>' +
+        '<h3>200 Eastern Pkwy, Brooklyn, NY 11238</h3>' +
+        '<p>The Brooklyn Museum is an art museum located in the New York City borough of Brooklyn.</p>' + 
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h2>Central Library</h2>' +
+        '<h3>10 Grand Army Plaza, Brooklyn, NY 11238</h3>' +
+        '<p>The Central Library is the main branch of the Brooklyn Public Library, located at Flatbush Avenue.</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h2>Prospect Park Zoo</h2>' +
+        '<h3>450 Flatbush Ave, Brooklyn, NY 11225</h3>' +
+        '<p>The Prospect Park Zoo is a 12-acre zoo located off Flatbush Avenue on the eastern side of Prospect Park, Brooklyn, New York City.</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h2>Barclays Center</h2>' +
+        '<h3>620 Atlantic Ave, Brooklyn, NY 11217</h3>' +
+        '<p>Barclays Center is a multi-purpose indoor arena in the New York City borough of Brooklyn.</p>' +
+        '</div>']
+    ];
+        
+    // Add multiple markers to map
+    var infoWindow = new google.maps.InfoWindow(), marker, i;
+    
+    // Place each marker on the map  
+    for( i = 0; i < markers.length; i++ ) {
+        var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+        bounds.extend(position);
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            title: markers[i][0]
+        });
+        
+        // Add info window to marker    
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infoWindow.setContent(infoWindowContent[i][0]);
+                infoWindow.open(map, marker);
+            }
+        })(marker, i));
+
+        // Center the map to fit all markers on the screen
+        map.fitBounds(bounds);
+    }
+
+    // Set zoom level
+    var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+        this.setZoom(14);
+        google.maps.event.removeListener(boundsListener);
+    });
+}
+
+window.initMap = initMap;
