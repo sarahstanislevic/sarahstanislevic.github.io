@@ -51,67 +51,67 @@ for(i=1; i<26; i++) {
             break;
 
             case '10':
-            alert('Todays Actvity:');
+            alert('Todays Actvity: Music themed light show @Brooklyn Botanic Garden, Brooklyn');
             break;
 
             case '11':
-            alert('Todays Actvity:', );
+            alert('Todays Actvity: Eat Food at the Bryant Park Holiday Market, Midtown, Manhattan', );
             break;
 
             case '12':
-            alert('Todays Actvity:');
+            alert('Todays Actvity: Christmas Tree Light Display @Washington Square Park, Greenwich Village');
             break;
 
             case '13':
-            alert('Todays Actvity:');
+            alert('Todays Actvity: See the Rockettes @Radio City Music Hall, Midtown');
             break;
 
             case '14':
-            alert('Todays Actvity:');
+            alert('Todays Actvity: Visit the Chelsea Market, Meatpacking Distract');
             break;
 
             case '15':
-            alert('Todays Actvity:');
+            alert('Todays Actvity: See the light and sound show, @SUMMIT One Vanderbilt, Manhattan ');
             break; 
 
             case '16':
-            alert('Helloooooooo', );
+            alert('Todays Actvity: See the lite up stars, @The Shops at Columbus Circle, Midtown West', );
             break;
 
             case '7':
-            alert('He');
+            alert('Todays Actvity: Visit the Pulitzer Fountain & The Plaza Hotel to see animal sculptures, Midtown');
             break;
 
             case '18':
-            alert('He');
+            alert('Todays Actvity: Take in the lights on Neighborhood Brownstones, UWS');
             break;
 
             case '19':
-            alert('He');
+            alert('Todays Actvity: Chill out at Zuccotti Park and view the lights, FiDi');
             break;
 
             case '20':
-            alert('He');
+            alert('Todays Actvity: Visit the Luminaries exhibit, Brookfield Place, Battery Park City');
             break;
 
             case '21':
-            alert('Helloooooooo', );
+            alert('Todays Actvity: Winter Latern Festival in Queens, LI, Staten Island', );
             break;
 
             case '22':
-            alert('He');
+            alert('Todays Actvity: See the illuminated toy installations between 48th St – 57th St, @Fifth Avenue, Midtown');
             break;
 
             case '23':
-            alert('He');
+            alert('Todays Actvity: Eat food at the Union Square Holiday Market, 14th st, Manhattan');
             break;
 
             case '24':
-            alert('He');
+            alert('Merry Christmas Eve!');
             break;
 
             case '25':
-            alert('He');
+            alert('Merry Christmas!');
             break; 
 
         }
