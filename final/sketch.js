@@ -132,34 +132,41 @@ function initMap() {
         
     // Multiple markers location, latitude, and longitude
     var markers = [
-        ['Brooklyn Museum, NY', 40.671349546127146, -73.96375730105808],
-        ['Central Library, Brooklyn, NY', 40.67254944015601, -73.9682162170653],
-        ['Prospect Park Zoo, NY', 40.66427511834109, -73.96512605857858],
-        ['Barclays Center, Brooklyn, NY', 40.68268267107631, -73.97546296241961]
+        ['Harvest Moon Farm & Orchard, North Salem, NY', 41.350646281599296, -73.63498051534452],
+        ['Dyker Heights, Brooklyn, NY', 40.61673162543615, -74.01491],
+        ['Amaze Light Festival, Flushing, NY', 40.757997909252346, -73.84590713068907],
+        ['Saks Fifth Ave, Midtown, NY', 40.75881095461653, -73.97688046931093]
+        
     ];
                         
     // Info window content
     var infoWindowContent = [
         ['<div class="info_content">' +
-        '<h2>Brooklyn Museum</h2>' +
-        '<h3>200 Eastern Pkwy, Brooklyn, NY 11238</h3>' +
-        '<p>The Brooklyn Museum is an art museum located in the New York City borough of Brooklyn.</p>' + 
+        '<h2>Harvest Moon Farm & Orchard</h2>' +
+        '<h3>130 Hardscrabble Rd, North Salem, NY 10560</h3>' +
+        '<p>Year-round farm with a produce stand & a bakery, plus fall apple picking & holiday light shows.</p>' + 
         '</div>'],
+
         ['<div class="info_content">' +
-        '<h2>Central Library</h2>' +
-        '<h3>10 Grand Army Plaza, Brooklyn, NY 11238</h3>' +
-        '<p>The Central Library is the main branch of the Brooklyn Public Library, located at Flatbush Avenue.</p>' +
+        '<h2>Dyker Heights Light Displays</h2>' +
+        '<h3>12th Ave & 84th St, Brooklyn, NY 11238</h3>' +
+        '<p>Dyker Heights homes are lit up and ready to be seen! The neighborhood’s impressive light display has been a tradition for more than 30 years and spans three avenues and several streets.</p>' +
         '</div>'],
+
         ['<div class="info_content">' +
-        '<h2>Prospect Park Zoo</h2>' +
-        '<h3>450 Flatbush Ave, Brooklyn, NY 11225</h3>' +
-        '<p>The Prospect Park Zoo is a 12-acre zoo located off Flatbush Avenue on the eastern side of Prospect Park, Brooklyn, New York City.</p>' +
+        '<h2>Amaze Light Festival</h2>' +
+        '<h3>41 Seaver Wy, Queens, NY 11368</h3>' +
+        '<p>One of the country’s largest holiday light shows is now open at Citi Field in Flushing, Queens. This massive display is currently open until January and features millions of dazzling lights to walkthrough and check out.</p>' +
         '</div>'],
+
         ['<div class="info_content">' +
-        '<h2>Barclays Center</h2>' +
-        '<h3>620 Atlantic Ave, Brooklyn, NY 11217</h3>' +
-        '<p>Barclays Center is a multi-purpose indoor arena in the New York City borough of Brooklyn.</p>' +
-        '</div>']
+        '<h2>Saks Fifth Ave Light Show</h2>' +
+        '<h3>611 5th Ave, New York, NY 10022</h3>' +
+        '<p>Saks Fifth Avenue never disappoints with its enormous front facade decorated in colorful lights sure to get you giddy with holiday cheer! The 13th annual light show features over 700,000 programmed LED lights and can be viewed through end of December/early January. </p>' +
+        '</div>'],
+
+
+       
     ];
         
     // Add multiple markers to map
@@ -189,7 +196,7 @@ function initMap() {
 
     // Set zoom level
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
-        this.setZoom(14);
+        this.setZoom(10);
         google.maps.event.removeListener(boundsListener);
     });
 }
