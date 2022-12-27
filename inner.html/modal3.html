@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Selectable - Display as grid</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+ 
+  <style>
+  #feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background: #FECA40; }
+  #selectable .ui-selected { background: darkgreen; color: white; }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 450px; }
+  #selectable li { margin: 3px; padding: 1px; float: left; width: 100px; height: 80px; font-size: 4em; text-align: center; }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#selectable" ).selectable();
+  } );
+  
+</script>
+</head>
+<body>
+ 
+ <div id="dialog" title="Basic dialog">
+  <p>This is an animated dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+
+<ol id="selectable">
+  <li class="ui-state-default">1</li>
+  <li class="ui-state-default">2</li>
+  <li class="ui-state-default">3</li>
+  <li class="ui-state-default">4</li>
+  <li class="ui-state-default">5</li>
+  <li class="ui-state-default">6</li>
+  <li class="ui-state-default">7</li>
+  <li class="ui-state-default">8</li>
+  <li class="ui-state-default">9</li>
+  <li class="ui-state-default">10</li>
+  <li class="ui-state-default">11</li>
+  <li class="ui-state-default">12</li>
+  <li class="ui-state-default">13</li>
+  <li class="ui-state-default">14</li>
+  <li class="ui-state-default">15</li>
+  <li class="ui-state-default">16</li>
+  <li class="ui-state-default">17</li>
+  <li class="ui-state-default">18</li>
+  <li class="ui-state-default">19</li>
+  <li class="ui-state-default">20</li>
+  <li class="ui-state-default">21</li>
+  <li class="ui-state-default">22</li>
+  <li class="ui-state-default">23</li>
+  <li class="ui-state-default">24</li>
+  <li class="ui-state-default">25</li>
+
+</ol>
+ 
+ 
+</body>
+</html>
