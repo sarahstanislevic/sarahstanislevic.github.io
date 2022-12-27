@@ -30,12 +30,12 @@
     display:inline-block;
     vertical-align:middle;
     box-shadow: 10px 10px 5px #888;
-    opacity:  0.8;
     font-size:300%;
     color: #F00;
     
     /* background */
     background-color: white ;
+    opacity: 0.8;
 }
 
 .door:hover {
