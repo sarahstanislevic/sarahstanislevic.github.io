@@ -67,7 +67,7 @@ for(i=1; i<26; i++) {
             break;
 
             case '14':
-            alert('Todays Actvity: Visit the Chelsea Market, Meatpacking Distract');
+            alert('Todays Actvity: Visit the Chelsea Market, @Meatpacking Distract');
             break;
 
             case '15':
@@ -87,7 +87,7 @@ for(i=1; i<26; i++) {
             break;
 
             case '19':
-            alert('Todays Actvity: Chill out at Zuccotti Park and view the lights, FiDi');
+            alert('Todays Actvity: Chill out at Zuccotti Park and view the lights, @FiDi');
             break;
 
             case '20':
@@ -95,7 +95,7 @@ for(i=1; i<26; i++) {
             break;
 
             case '21':
-            alert('Todays Actvity: Winter Latern Festival in Queens, LI, Staten Island', );
+            alert('Todays Actvity: Visit the Winter Latern Festival in Queens, LI, or Staten Island', );
             break;
 
             case '22':
@@ -135,7 +135,15 @@ function initMap() {
         ['Harvest Moon Farm & Orchard, North Salem, NY', 41.350646281599296, -73.63498051534452],
         ['Dyker Heights, Brooklyn, NY', 40.61673162543615, -74.01491],
         ['Amaze Light Festival, Flushing, NY', 40.757997909252346, -73.84590713068907],
-        ['Saks Fifth Ave, Midtown, NY', 40.75881095461653, -73.97688046931093]
+        ['Saks Fifth Ave, Midtown, NY', 40.75881095461653, -73.97688046931093],
+        ['New York Botanical Garden Glow, Bronx, NY', 40.86311456845146, -73.88014036137815],
+        ['Seaport District, Manhattan', 40.70602396324339, -74.00191721690764],
+        ['Rockefeller Center', 40.759292814794996, -73.97880234603359],
+        ['Bronx Zoo Holiday Light Show, The Bronx, NY', 40.851211673759884, -73.87708403068848],
+        ['Hudson Yards, New York, NY', 40.75452297210832, -74.00162995448743],
+        ['Brooklyn Botanic Garden, Brooklyn, NY', 40.66844959612454, -73.96464126137813],
+
+
         
     ];
                         
@@ -164,6 +172,44 @@ function initMap() {
         '<h3>611 5th Ave, New York, NY 10022</h3>' +
         '<p>Saks Fifth Avenue never disappoints with its enormous front facade decorated in colorful lights sure to get you giddy with holiday cheer! The 13th annual light show features over 700,000 programmed LED lights and can be viewed through end of December/early January. </p>' +
         '</div>'],
+
+        ['<div class="info_content">' +
+        '<h2> New York Botanical Garden Glow & Train Show</h2>' +
+        '<h3>2900 Southern Blvd, The Bronx, NY 10458 10560</h3>' +
+        '<p>Everyone loves dazzling lights during the winter months, and now, the NYBG is putting together an outdoor, immersive experience that is sure to satisfy! They have created a “glowing world of color” that is centered around their famous landmark, the Haupt Conservatory. Incredible installations will appear in the gardens and Reflecting Pool.</p>' + 
+        '</div>'],
+
+        ['<div class="info_content">' +
+        '<h2>Fulton Street Tree and Winter Wonderland</h2>' +
+        '<h3>19 Fulton St, New York, NY 10038 11238</h3>' +
+        '<p>The annual Seaport District tree is lit up on Fulton Street and it’s a beautiful place to view lights along the water. There will be tons of activities, from crafts and live music to pop-up markets to hot chocolate and mulled wine. While you’re over there, be sure to check out Watermark, which is currently hosting their “The Santa Clauses” Winter Wonderland takeover too.</p>' +
+        '</div>'],
+
+        ['<div class="info_content">' +
+        '<h2>Rockefeller Center Tree & Iceskating</h2>' +
+        '<h3>45 Rockefeller Plaza, New York, NY 10111</h3>' +
+        '<p>The most iconic light displays of the holiday season in NYC! The gorgeous Christmas tree boasts over 50,000 multi-colored lights and dazzles New Yorkers and tourists alike year after year.</p>' +
+        '</div>'],
+
+          ['<div class="info_content">' +
+        '<h2>Bronx Zoo Holiday Light Show</h2>' +
+        '<h3>River Entrance, 2300 Southern Blvd, The Bronx, NY 10460</h3>' +
+        '<p>Covering several acres of the zoo, explore a glowing forest at this year’s Bronx Zoo Lights. See larger-than-life toads, frogs, snails, sunbirds, and more with 21 beaming lanterns.</p>' +
+        '</div>']
+
+
+        ['<div class="info_content">' +
+        '<h2>Hudson Yards Holiday Display</h2>' +
+        '<h3>30 Hudson Yards, New York, NY 10001</h3>' +
+        '<p>This year, Hudson Yards brought back their stunning holiday installation called “Shine Bright.” The neighborhood is decorated in more than two million lights! Prepare to be dazzled by the shopping center’s interior decked out in shimmering string lights. Step outside to see the vessel gleaming gold alongside other holiday trees and the beautiful hot air balloon display!</p>' +
+        '</div>'],
+        
+        ['<div class="info_content">' +
+        '<h2>Brooklyn Botanic Garden Light Show</h2>' +
+        '<h3>990 Washington Ave, Brooklyn, NY 11225</h3>' +
+        '<p>Roam under one million sparkling lights at Brooklyn Botanic Garden’s astonishing holiday trail. Walk along the garden’s landscapes to a curated soundtrack and experience incredible light sculptures, & vibrant effects on the BBG’s landscapes that will illuminate the many trees and water features.</p>' +
+        '</div>']
+
 
 
        
